@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.root {
+    --heading-font: 'Lobster', cursive;
+}
+
+*{
+    /* background-color: violet; */
+}
+
+.header {
+    height: 190px;
+    flex-direction: column;
+}
+
+.item a {
+    /* font-size: 1.5rem; */
+    padding: 1px;
+}
+
+.no-bullet {
+    margin: 0%;
+    padding: 2px;
+}
+
+#home {
+    margin: 5px;
+    padding: 20px;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.white {
+    font-size: 1.5rem;
+}
+
+#home {
+    height: 400px;
+    text-align: center;
+    align-items: center;
+}
+
+.button {
+    margin: 10px;
+    width: fit-content;
+}
+
+#home::before {
+    height: 600px;
+}
+
+.sub-container {
+    margin: 10px;
+}
+
+#services {
+    padding: 10px;
+}
+
+#services .sub-services {
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 2rem;
+}
+
+#ourClients .sub-services img {
+    display: inline-block;
+    width: 70px;
+    height: auto;
+    margin: 1rem;
+}
+
+#ourClients sub-services {
+    width: 1fr 1fr 1fr 1fr;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#contactUs label {
+    width:fit-content;
+    display: block;
+    margin-bottom: 2px;
+}
+
+#contactUs .message {
+    margin: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#contactUs form .message #label-message, .message textarea {
+    /* background-color: yellow; */
+    float: none;
+}
+
+#contactUs input, #contactUs #message {
+    /* width: 20px; */
+    margin: 0px;
+}
+
+input#button {
+    margin-bottom: 10px;
+}
+/* .navigation {
+    display: flex;
+    flex-direction: column;
+} */

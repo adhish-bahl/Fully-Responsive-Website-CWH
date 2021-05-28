@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --heading-font: 'Lobster', cursive;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    color: black;
+    box-sizing: border-box;
+}
+
+.header, .no-bullet {
+    display: flex;
+    justify-content: left;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.63);
+    /* float: left; */
+    width: 100%;
+    box-sizing: border-box;
+    height: 6rem;
+    /* padding: .1rem; */
+}
+
+.header {
+    position: sticky;
+    top: 0%;
+}
+
+.logo {
+    display: inline-block;
+    clip-path: circle(50% at 50% 40%);
+    height: 5rem;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.no-bullet, .item a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: inline;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+}
+
+.item {
+    display: inline-block;
+    font-family: var(--heading-font);
+    margin-top: 1rem;
+}
+
+.navigation {
+    display: flex;
+}
+
+#home {
+    text-align: center;
+    padding: 13rem 14rem 3rem 14rem;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: 100px; */
+    /* top: 0%; */
+    /* margin: 1rem; */
+}
+
+#home::before {
+    content: "";
+    background: url('/img/bg1.jpg') no-repeat center center/cover;
+    opacity: 0.89;
+    z-index: -51;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 610px;
+    box-sizing: border-box;
+}
+
+.white {
+    color: white;
+    font-size: 2rem;
+}
+
+#home h1 {
+    font-family: var(--heading-font);
+    font-size: 3.5rem;
+}
+
+.button {
+    padding: .8rem;
+    display: inline-block;
+    border: 2px solid black;
+    color: white;
+    width: 200px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.63);
+    margin: 1rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
+.heading {
+    font-family: var(--heading-font);
+    font-size: 3.5rem;
+    display: block;
+}
+
+#services {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+.sub-services {
+    display: flex;
+    justify-content: center;
+}
+
+.sub-container {
+    border: 2px solid black;
+    width: 1fr;
+    margin: 4rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    background-color: rgb(248, 237, 220);
+}
+
+.sub-container img {
+    width: 80%;
+    /* padding: 1rem; */
+}
+
+#ourClients div img {
+    height: auto;
+    margin: 2rem;
+    z-index: -1;
+    width: 200px;
+    /* width: 1fr; */
+}
+
+#ourClients {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#ourClients .sub-services {
+    flex-wrap: wrap;
+}
+
+#ourClients::before {
+    background: url('/img/bg.jpg') no-repeat center center/cover;
+    content: "";
+    opacity: 0.5;
+    position: absolute; 
+    left: 0%;
+    z-index: -2;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+} 
+
+#contactUs {
+    background: url('/img/contact.jpg') no-repeat center center/cover;
+    text-align: center;
+    /* margin: 1rem 0rem 4rem 0rem; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactUs form p{
+    margin: 1.5rem;
+    margin-bottom: 0%;
+}
+
+#contactUs label, #contactUs input {
+    /* position: absolute; */
+    /* float: left; */
+}
+
+#contactUs label {
+    font-size: 1.5rem;
+    display: inline-block;
+    text-align: right;
+    width: 200px;
+}
+
+#contactUs input, textarea#message {
+    margin-left: 1rem;
+    display: inline-block;
+    width: 15rem;
+    /* float: right; */
+    /* right: 450px; */
+}
+
+.message{
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
+
+#contactUs form p.message label#label-message {
+    /* float: left; */
+    /* display: inline-block; */
+    /* width: 49.5%; */
+    /* position: relative; */
+    /* background-color: tomato; */
+    /* top: 0%; */
+    /* height: 100%; */
+}
+
+textarea#message {
+    display: inline-block;
+    /* float: left; */
+    /* right: 20rem; */
+}
+
+#button {
+    margin: 1.5rem;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 10px;
+    padding: .3rem;
+    padding-bottom: 0%;
+    /* box-sizing: border-box; */
+    color: white;
+    /* width: 10%; */
+    /* display: inline-block; */
+}
+
+.btn {
+    clear: both;
+    box-sizing:content-box;
+}
+
+.footer p{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+    box-sizing:content-box;
+    /* padding-top: 0%; */
+}
+
